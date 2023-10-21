@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurtlar Sofrası</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet icon" type="image/png" href="/photos/OIG.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+	    font-family: "Anybody";
+	    src: url("https://assets.codepen.io/1492907/Anybody.woff2") format("woff2");
+        }
+        .container{
+            background-color: #2195f350;
+            display: flex;
+            padding: 10px;
+            width: auto;
+            opacity: 1;
+            flex: auto auto;
+            justify-content: flex-end;
+        }
+        .anasayfa_merkez{
+            background-color: rgb(205, 50, 50);
+            height: 2000px;  
+            width: 100%;
+            display: flex;
+            color: azure;
+        }
+        .anasayfa_menu_stick{
+            background-image: url(https://i.hizliresim.com/kqpu3h1.jpg);
+            background-size: 4em;
+            background-repeat: no-repeat;
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 17px;
+            position: fixed;
+            display: flex;
+            margin-top: 15%;   
+            transition: .3s;
+        }
+        .anasayfa_menu_stick:hover{
+            background-image: none;
+            background-color: rgba(46, 65, 65, 0.5);
+            text-align: center;
+            position: fixed;
+            float: right;
+            border-radius: 17px;
+            width: 10%;
+            height: 50%;
+            margin-top: 15%;
+        }
+
+        .anasayfa_menu_stick>ul>li>a{
+            position: fixed;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: capitalize;
+            color: rgba(119, 209, 209, 1);
+        }
+
+        ul{
+            list-style: inside;
+            list-style: none;
+            padding-left: 5%;
+            display: grid;
+            padding-top: 5%;
+            grid-template-rows: auto;
+            visibility: hidden;
+        }
+        .anasayfa_menu_stick:hover>ul{
+            visibility: visible;
+        }
+        
+        #anasayfa_orta{
+            background-color: black;
+            height: 500px;
+            width: 100%;
+            margin: 25px;
+            color: azure;
+        }
+        #anasayfa_orta{
+            padding: 15%;
+            font-size: 66px;
+            font-family: monospace;
+            text-size-adjust: 66px;
+        }
+        
+        #anasayfa_buton>a{
+            border-radius: 17%;
+            display: flex;
+            position: fixed;
+            height: 5%;
+            width: 10%;
+        }
+        #anasayfa_buton img{
+            border-radius: 17%;
+        }
+    </style>
+    <script>
+        const degis = document.getElementsByClassName("anasayfa_menu_stick");
+        const anasayfa = document.getElementById("anasayfa_buton");
+
+        function yazi_cikarma(){
+                
+        }
+
+    </script>
+</head>
+<body> 
+
+    <div class="container">
+        <div id="anasayfa_buton" onmouseover="yazi_cikarma">
+            <a href="index.html"><img src="photos/OIG.jpg" alt="">  </a>
+        </div>
+
+        <div class="anasayfa_merkez">
+            <div id="anasayfa_orta">
+                <h1>Kurtlar Sofrasına</h1>
+                <h1>Hoşgeldiniz.</h1>
+            </div>
+        
+        </div>
+        <div class="anasayfa_menu_stick menu_picture">
+            <ul>
+                <li><a href="giris.html"><p>Giriş</p></a>   
+                <li><a href="uyeol.html"><p>Üye Ol</p></a></li>
+                <li><a href="oyun.html"><p>Oyun</p></a></li>
+                <li><a href="film_dizi.html"><p>Film/Dizi</p></a></li>
+                <li><a href="ogretim.html"><p>Öğretim</p></a></li>
+                <li><a href="kariyer.html"><p>Kariyer</p></a></li></li>
+            </ul>
+    
+    
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üye Ol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kullanici.php">
+    <style>
+        .uyeOl{
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+            margin-top: 5%;
+        }
+        .container-ef>input{
+            display: inline-block;
+            border-radius: 1em;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 17px;
+            font-size: 25px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .container-efl>h2{
+            display: inline-block;
+            margin: 5%;
+        }
+        .uyeOl>button{
+            margin: auto;
+            margin-top: 25px;
+            size: 3em;
+            padding: 2em;
+            border-radius: 7em;
+            border: none;
+            background-color: aqua;
+            cursor: pointer;
+            box-shadow:  3px 9px #999;  
+            font-size: 1em ;
+            
+        }
+        .uyeOl>button:active{
+            box-shadow: 0px 3px #000000;
+            transform: translateY(6px);
+            transform: translateX(5px)
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="uyeOl">
+        <div id="anasayfa_buton" onmouseover="yazi_cikarma">
+            <a href="index.html"><img src="photos/OIG.jpg" alt="">  </a>
+        </div>
+        <div class="container-ef">
+            <h2>E-Posta Adresi:</h2>
+            <input type="email">
+        <div class="container-ef">
+            <h2>Şifre:</h2>
+            <input type="password"></div>      
+        </div>
+        <button>Üye Ol</button> <button>Giriş Yap</button>
+    </div>
+</body>
+</html>
